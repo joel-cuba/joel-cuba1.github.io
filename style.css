@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.143)),url(/images/bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.base{
+    width: 100%;
+    height: 400px;
+    background-color: #33333319;
+    margin-top: 20px;
+}
+
+/* Navbar */
+header {
+    background: rgba(128, 128, 128, 0.765);
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+}
+.logo img{
+    width: 70px;
+    border-radius: 50%;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+    color: rgb(93, 34, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+
+    
+}
+.her:hover{
+    animation: float 2s ease-in-out;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border: 2px double black;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Menu */
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    
+}
+#about{
+    width: 50%;
+    height: 150px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#about:hover{
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.669);
+    cursor: pointer;
+    
+}
+#contact{
+    width: 50%;
+    height: 150px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#contact:hover{
+    width: 50%;
+    cursor: pointer;
+    background-color: rgb(165, 246, 140);
+    
+}
+
+/* Footer */
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: #ff6b6b;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* MIDDLE SECTION CSS */
+
+.special-dishes{
+    padding: 70px 10%;
+    background: #fff8f0;
+    text-align: center;
+}
+
+.title h2{
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.title p{
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.food-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-card{
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.food-card:hover{
+    transform: translateY(-10px);
+}
+
+.food-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.food-card h3{
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.food-card p{
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.food-card span{
+    color: #e67e22;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.chef-section{
+    padding: 70px 10%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('img/chef-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.chef-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.chef-text p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.chef-text a{
+    text-decoration: none;
+    background: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+.chef-text a:hover{
+    background: #d35400;
+}
